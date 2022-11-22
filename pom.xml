@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>id.andimalik</groupId>
-	<artifactId>users-service</artifactId>
+	<artifactId>diklat-bt-sesi3-assignment</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>users-service</name>
+	<name>andimalik-services</name>
 	<description>User project for Spring Boot</description>
 	<properties>
 		<java.version>1.8</java.version>
