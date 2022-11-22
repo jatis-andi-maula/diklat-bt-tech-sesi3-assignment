@@ -1,9 +1,9 @@
-package id.andimalik.services.user.services;
-//package id.andimalik.services.user.services;
+package id.andimalik.app.user.services;
+//package id.andimalik.app.user.services;
 //
-//import id.andimalik.services.user.entity.Users;
-//import id.andimalik.services.user.repository.UsersRepository;
-//import id.andimalik.services.user.service.UsersService;
+//import id.andimalik.app.user.entities.Users;
+//import id.andimalik.app.user.repositories.UsersRepository;
+//import id.andimalik.app.user.services.UsersService;
 //import org.junit.jupiter.api.Assertions;
 //import org.junit.jupiter.api.Test;
 //import org.mockito.InjectMocks;

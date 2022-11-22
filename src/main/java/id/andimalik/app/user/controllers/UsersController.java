@@ -1,4 +1,4 @@
-package id.andimalik.services.user.controller;
+package id.andimalik.app.user.controllers;
 
 import java.util.List;
 
@@ -7,8 +7,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import id.andimalik.services.user.entity.User;
-import id.andimalik.services.user.service.UsersService;
+import id.andimalik.app.user.entities.User;
+import id.andimalik.app.user.services.UsersService;
 
 @RestController
 @RequestMapping("/users")

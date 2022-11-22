@@ -1,4 +1,4 @@
-package id.andimalik.services.user.entity;
+package id.andimalik.app.user.entities;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

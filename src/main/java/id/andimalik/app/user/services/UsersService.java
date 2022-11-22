@@ -1,12 +1,12 @@
-package id.andimalik.services.user.service;
+package id.andimalik.app.user.services;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import id.andimalik.services.user.entity.User;
-import id.andimalik.services.user.repository.UsersRepository;
+import id.andimalik.app.user.entities.User;
+import id.andimalik.app.user.repositories.UsersRepository;
 
 @Service
 public class UsersService {

@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>id.andimalik</groupId>
-	<artifactId>diklat-bt-sesi3-assignment</artifactId>
+	<artifactId>andimalik-app</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>andimalik-services</name>
-	<description>User project for Spring Boot</description>
+	<name>andimalik-app</name>
+	<description>BT Training 3rd Session Assignment</description>
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
@@ -84,7 +84,7 @@
 					<testFramework>JUNIT5</testFramework>
 					<testMode>EXPLICIT</testMode>
 					<baseClassForTests>
-						id.andimalik.services.user.verifier.UsersVerifierTest
+						id.andimalik.app.user.verifiers.UsersVerifierTest
 					</baseClassForTests>
 				</configuration>
 			</plugin>
@@ -110,8 +110,8 @@
 				</executions>
 				<configuration>
 					<excludes>
-						<exclude>id/andimalik/services/user/entity/*.class</exclude>
-						<exclude>id/andimalik/services/user/UsersServiceApplication.class</exclude>
+						<exclude>id/andimalik/app/user/entities/*.class</exclude>
+						<exclude>id/andimalik/app/Application.class</exclude>
 					</excludes>
 				</configuration>
 			</plugin>

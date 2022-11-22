@@ -1,10 +1,10 @@
-package id.andimalik.services.user;
+package id.andimalik.app;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class UsersServiceApplicationTests {
+class ApplicationTests {
 
 	@Test
 	void contextLoads() {
