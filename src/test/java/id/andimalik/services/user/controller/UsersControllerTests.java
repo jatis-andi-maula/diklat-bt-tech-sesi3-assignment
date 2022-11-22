@@ -1,6 +1,7 @@
-//package com.service.users.controller;
+package id.andimalik.services.user.controller;
+//package id.andimalik.services.user.controller;
 //
-//import com.service.users.entity.Users;
+//import id.andimalik.services.user.entity.Users;
 //import org.junit.jupiter.api.Test;
 //import org.springframework.http.MediaType;
 //

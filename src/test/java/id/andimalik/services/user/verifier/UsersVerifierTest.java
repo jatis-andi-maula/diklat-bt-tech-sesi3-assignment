@@ -1,4 +1,4 @@
-package com.service.users.verifier;
+package id.andimalik.services.user.verifier;
 
 import io.restassured.RestAssured;
 import org.junit.jupiter.api.BeforeEach;

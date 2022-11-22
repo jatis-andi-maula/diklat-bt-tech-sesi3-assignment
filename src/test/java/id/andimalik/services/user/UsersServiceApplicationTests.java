@@ -1,4 +1,4 @@
-package com.service.users;
+package id.andimalik.services.user;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

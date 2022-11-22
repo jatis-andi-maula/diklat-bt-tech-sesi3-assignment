@@ -8,7 +8,7 @@
 		<version>2.7.1</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.service.users</groupId>
+	<groupId>id.andimalik</groupId>
 	<artifactId>users-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>users-service</name>
@@ -84,7 +84,7 @@
 					<testFramework>JUNIT5</testFramework>
 					<testMode>EXPLICIT</testMode>
 					<baseClassForTests>
-						com.service.users.verifier.UsersVerifierTest
+						id.andimalik.services.user.verifier.UsersVerifierTest
 					</baseClassForTests>
 				</configuration>
 			</plugin>
@@ -110,8 +110,8 @@
 				</executions>
 				<configuration>
 					<excludes>
-						<exclude>com/service/users/entity/*.class</exclude>
-						<!--<exclude>com/service/users/UsersServiceApplication.class</exclude>-->
+						<exclude>id/andimalik/services/user/entity/*.class</exclude>
+						<exclude>id/andimalik/services/user/UsersServiceApplication.class</exclude>
 					</excludes>
 				</configuration>
 			</plugin>

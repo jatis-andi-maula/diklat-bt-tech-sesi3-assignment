@@ -1,7 +1,8 @@
-//package com.service.users.controller;
+package id.andimalik.services.user.controller;
+//package id.andimalik.services.user.controller;
 //
 //import com.fasterxml.jackson.databind.ObjectMapper;
-//import com.service.users.service.UsersService;
+//import id.andimalik.services.user.service.UsersService;
 //import org.mockito.InjectMocks;
 //import org.springframework.beans.factory.annotation.Autowired;
 //import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
