@@ -5,33 +5,30 @@ import org.springframework.http.HttpMethod
 import org.springframework.http.MediaType
 
 Contract.make {
-	description "Create a User"
+	description "Get All User"
 	request {
 		url "/users"
-		method HttpMethod.POST.toString()
+		method HttpMethod.GET.toString()
 		headers {
 			contentType(MediaType.APPLICATION_JSON_VALUE)
 			accept(MediaType.APPLICATION_JSON_VALUE)
 		}
-		body(
-				name: "Alphonse the 2nd",
-				phone: "67890",
-				email: "alphonso2@jatis.com",
-				address: "Kutai Kartanegara"
-				)
 	}
 	response {
-		status CREATED()
-		body(
-				userId: anyNumber(),
-				name: "Alphonse the 2nd",
-				phone: "67890",
-				email: "alphonso2@jatis.com",
-				address: "Kutai Kartanegara"
-				)
+		status OK()
 		headers {
 			contentType(MediaType.APPLICATION_JSON_VALUE)
 		}
+		body(
+				[
+					[
+						userId: anyNumber(),
+						name: regex('.*'),
+						phone: regex('.*'),
+						email: email(),
+						address: regex('.*')
+					]
+				]
+				)
 	}
 }
-

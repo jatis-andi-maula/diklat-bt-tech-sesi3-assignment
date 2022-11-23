@@ -2,8 +2,8 @@ package id.andimalik.app.user.services;
 //package id.andimalik.app.user.services;
 //
 //import id.andimalik.app.user.entities.Users;
-//import id.andimalik.app.user.repositories.UsersRepository;
-//import id.andimalik.app.user.services.UsersService;
+//import id.andimalik.app.user.repositories.UserRepository;
+//import id.andimalik.app.user.services.UserService;
 //import org.junit.jupiter.api.Assertions;
 //import org.junit.jupiter.api.Test;
 //import org.mockito.InjectMocks;
@@ -15,10 +15,10 @@ package id.andimalik.app.user.services;
 //public class UsersServiceTests {
 //
 //    @InjectMocks
-//    UsersService usersService;
+//    UserService usersService;
 //
 //    @Mock
-//    UsersRepository usersRepository;
+//    UserRepository usersRepository;
 //
 //    Users users = new Users("admin", "12345");
 //

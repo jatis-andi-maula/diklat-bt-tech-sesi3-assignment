@@ -1,6 +1,7 @@
 package id.andimalik.app.user.controllers;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -8,13 +9,13 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import id.andimalik.app.user.entities.User;
-import id.andimalik.app.user.services.UsersService;
+import id.andimalik.app.user.services.UserService;
 
 @RestController
 @RequestMapping("/users")
-public class UsersController {
+public class UserController {
 	@Autowired
-	UsersService service;
+	UserService service;
 
 	@PostMapping
 	public ResponseEntity<User> saveUser(@RequestBody User request) {
@@ -26,6 +27,18 @@ public class UsersController {
 	public ResponseEntity<List<User>> getAll() {
 		List<User> users = service.findAllUsers();
 		return new ResponseEntity<List<User>>(users, HttpStatus.OK);
+	}
+
+	@GetMapping
+	@RequestMapping("/{userId}")
+	public ResponseEntity<User> getUser(@PathVariable("userId") Integer userId) {
+		Optional<User> user = service.findUser(userId);
+
+		if (user.isPresent()) {
+			return new ResponseEntity<User>(user.get(), HttpStatus.OK);
+		}
+
+		return new ResponseEntity<User>(HttpStatus.NOT_FOUND);
 	}
 
 }

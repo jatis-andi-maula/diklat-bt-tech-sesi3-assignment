@@ -16,7 +16,7 @@ import javax.persistence.Id;
 @NoArgsConstructor
 public class User {
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE)
+	@GeneratedValue(strategy = GenerationType.TABLE, generator = "USER_ID_GENERATOR")
 	private Integer userId;
 	@Column
 	private String name;

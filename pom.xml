@@ -84,7 +84,7 @@
 					<testFramework>JUNIT5</testFramework>
 					<testMode>EXPLICIT</testMode>
 					<baseClassForTests>
-						id.andimalik.app.user.verifiers.UsersVerifierTest
+						id.andimalik.app.verifiers.AppVerifierTest
 					</baseClassForTests>
 				</configuration>
 			</plugin>
@@ -110,8 +110,9 @@
 				</executions>
 				<configuration>
 					<excludes>
-						<exclude>id/andimalik/app/user/entities/*.class</exclude>
 						<exclude>id/andimalik/app/Application.class</exclude>
+						<exclude>id/andimalik/app/user/entities/*.class</exclude>
+						<exclude>id/andimalik/app/product/entities/*.class</exclude>
 					</excludes>
 				</configuration>
 			</plugin>
