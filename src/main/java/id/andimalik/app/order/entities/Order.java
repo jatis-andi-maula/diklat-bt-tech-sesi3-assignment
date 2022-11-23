@@ -1,4 +1,4 @@
-package id.andimalik.app.product.entities;
+package id.andimalik.app.order.entities;
 
 import java.math.BigDecimal;
 
@@ -17,15 +17,15 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "PRODUCTS")
-public class Product {
+@Table(name = "ORDERS")
+public class Order {
 	@Id
-	@GeneratedValue(strategy = GenerationType.TABLE, generator = "PRODUCT_ID_GENERATOR")
+	@GeneratedValue(strategy = GenerationType.TABLE, generator = "ORDER_ID_GENERATOR")
+	private Integer orderId;
+	@Column
 	private Integer productId;
 	@Column
-	private String productName;
+	private BigDecimal count;
 	@Column
-	private BigDecimal price;
-	@Column
-	private String description;
+	private BigDecimal amount;
 }
